@@ -6,8 +6,19 @@ Este é o repositório onde farei uploads das minhas anotações para ter acesso
 
 ## Estrutura das Anotações
 
+### Formatação
+
 	TODO:
  	Criar uma estrutura de formatação consistente e aplicar em todas as anotações até agora
+
+### Upload
+
+	$ git add nome_do_arquivo.py
+	$ git status 
+	$ git commit -m "descrição" 
+	$ git push -u origin main
+
+###
 
 ## Descrições
 
