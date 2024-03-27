@@ -18,4 +18,5 @@ Este é o repositório onde farei uploads das minhas anotações para ter acesso
 
 
 - `atividade01.py` - print() e variáveis
-- `atividade02.py` - 
+- `atividade02.py` - Operadores matemáticos
+- `atividade03.py` - Operadores lógicos
