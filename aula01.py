@@ -47,19 +47,19 @@ print("Hello world!")
 idade = 18
 
 #   Uma variável que armazene o seu nome;
-nome = "Arthur Heiji "
+nome = "Nome "
 
 #   Uma variável que armazene o seu sobrenome;
-sobrenome = "Voos Shiroshima"
+sobrenome = "Sobrenome"
 
 #   Uma variável que armazene o seu nome completo, formado pela concatenação do seu nome pelo seu sobrenome (use as variáveis);
 nome_completo = str(nome) + str(sobrenome)
 
 #   Uma variável que contenha a sua altura;
-altura = 179
+altura = 180
 
 #   Uma variável que contenha o seu peso;
-peso = 92.5
+peso = 80
 
 #   Uma variável que contenha quantos dias na semana você estuda algoritmos;
 dias_estudando = 8

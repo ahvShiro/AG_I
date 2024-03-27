@@ -7,8 +7,8 @@ print("Alô mundo!")
 # Faça um Programa e crie variáveis para armazenar seu nome e sobrenome (em variáveis diferentes). 
 # Apresente na tela uma mensagem de boas vindas com o nome e sobrenome do usuário.
 
-nome = "Arthur"
-sobrenome = "Shiroshima"
+nome = "Nome"
+sobrenome = "Sobrenmome"
 
 print("Bem vindo,", nome, sobrenome)
 
@@ -17,12 +17,12 @@ print("Bem vindo,", nome, sobrenome)
 # sua idade, seu peso, sua altura e sua data de nascimento. 
 # Por fim, apresente todos esses dados na tela dentro de um print só.
 
-nome = "Arthur"
-sobrenome = "Shiroshima"
+nome = "Nome"
+sobrenome = "Sobrenmome"
 idade = 18
-peso = 93.5
-altura = 1.79
-data_de_nascimento = "15/12/2005"
+peso = 80
+altura = 1.80
+data_de_nascimento = "01/02/2003"
 
 print("Nome completo:", nome, sobrenome, "\nIdade:", idade,  "\nPeso:", peso, "\nAltura:", altura, "\nData de Nascimento:", data_de_nascimento)
 
