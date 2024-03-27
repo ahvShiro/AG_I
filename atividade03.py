@@ -1,6 +1,6 @@
 import math
 
-# print("Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo.")
+# print("01. Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo.")
 
 # x = int(input("n: "))
 
@@ -10,7 +10,8 @@ import math
 #     print("Negativo")
 
 
-# print("Faça um programa que peça dois números e imprima na tela somente o maior deles.")
+
+# print("02. Faça um programa que peça dois números e imprima na tela somente o maior deles.")
 
 # x = int(input("x: "))
 # y = int(input("y: "))
@@ -23,7 +24,8 @@ import math
 # print(m, "é MAIOR")
 
 
-# print("Faça um programa que peça a idade do usuário. Se ele for maior de idade, apresente a mensagem “Entrada permitida”. Se não, apresente “Entrada negada”.")
+
+# print("03. Faça um programa que peça a idade do usuário. Se ele for maior de idade, apresente a mensagem “Entrada permitida”. Se não, apresente “Entrada negada”.")
 
 # idade = int(input("Idade: "))
 
@@ -33,7 +35,8 @@ import math
 #     print("Entrada negada")
 
 
-# print("Crie um programa que peça uma nota de trabalho e uma de prova (as duas de 0 a 100). Se a média aritmética das notas for maior ou igual a 60, escreva “Aprovado”, se não, “Reprovado”.")
+
+# print("04. Crie um programa que peça uma nota de trabalho e uma de prova (as duas de 0 a 100). Se a média aritmética das notas for maior ou igual a 60, escreva “Aprovado”, se não, “Reprovado”.")
 
 # trabalho = int(input("Nota do trabalho: "))
 # prova = int(input("Nota da prova: "))
@@ -44,7 +47,8 @@ import math
 #     print("Reprovado")
 
 
-# print("Faça um programa que peça ao aluno o conceito dele na disciplina (A, B, C ou D). Se o conceito for A, B ou C apresente “Aprovado”, se não, apresente “Reprovado”.")
+
+# print("05. Faça um programa que peça ao aluno o conceito dele na disciplina (A, B, C ou D). Se o conceito for A, B ou C apresente “Aprovado”, se não, apresente “Reprovado”.")
 
 # conceito = input("Conceito: ")
 
@@ -54,7 +58,8 @@ import math
 #     print("Aprovado")
 
 
-# print("Faça um programa que recebe o salário do usuário. Se o usuário recebe menos que um salário mínimo, apresente na tela uma mensagem informando isso a ele. Se o salário dele for maior que o salário mínimo, calcule quantos salários mínimos ele ganha e informe na tela. Considere o valor de R$1.212,00 para o salário mínimo neste exercício")
+
+# print("06. Faça um programa que recebe o salário do usuário. Se o usuário recebe menos que um salário mínimo, apresente na tela uma mensagem informando isso a ele. Se o salário dele for maior que o salário mínimo, calcule quantos salários mínimos ele ganha e informe na tela. Considere o valor de R$1.212,00 para o salário mínimo neste exercício")
 
 # salario = float(input("Salário: "))
 
@@ -64,7 +69,8 @@ import math
 #     print("Você ganha menos de 1 salário mínimo")
 
 
-# print("Faça um programa que verifique o sexo de uma pessoa. O usuário deve informar ‘F’ ou ‘M’ e o programa deve escrever “Feminino” ou “Masculino”, conforme a letra digitada")
+
+# print("07. Faça um programa que verifique o sexo de uma pessoa. O usuário deve informar ‘F’ ou ‘M’ e o programa deve escrever “Feminino” ou “Masculino”, conforme a letra digitada")
 
 # sexo = input("Sexo: ")
 # if(sexo.upper() == 'F'):
@@ -83,7 +89,7 @@ import math
 #     print("Bem vindo,", nome)
 
 
-print("Faça um programa que peça a idade do usuário. Se ele for maior de idade, peça o salário dele e dê um aumento de 5%, apresentando na tela o valor final do salário. Se ele for menor, informe a mensagem “Cálculo não permitido”.")
+print("08. Faça um programa que peça a idade do usuário. Se ele for maior de idade, peça o salário dele e dê um aumento de 5%, apresentando na tela o valor final do salário. Se ele for menor, informe a mensagem “Cálculo não permitido”.")
 
 idade = int(input("Idade: "))
 
@@ -92,3 +98,7 @@ if(idade < 18):
 else:
     salario = float(input("Salário: "))
     print("Salário com 5% de aumento: R$", "{:.2f}".format(salario + (salario * 0.05) ))
+
+
+
+print("00. ")
