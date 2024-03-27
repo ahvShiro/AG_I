@@ -40,7 +40,7 @@ print("Hello world!")
 # nome_da_variavel = valor
 
 
-# === EXERCICIO 1 ===============================
+# === EXERCÍCIO 1 ===============================
 
 # Criar:
 #   Uma variável que armazene a sua idade;
@@ -67,7 +67,7 @@ dias_estudando = 8
 #   Uma variável que indique se a luz do seu quarto está acesa ou apagada;
 luz_quarto = False
 
-# === EXERCICIO 2 ===============================
+# === EXERCÍCIO 2 ===============================
 # Utilize o exercício anterior, apresentando na tela mensagens para cada valor de variável
 print("Seu nome é " + str(nome))
 print("Seu sobrenome é " + str(sobrenome))
