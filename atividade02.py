@@ -145,23 +145,40 @@ for i in range(32):
 
 print("13. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$450,00. O programa deve informar ao usuário a quantidade de latas de tinta a serem compradas e o preço total.")
 
-areaPintada = float(input("Área a ser pintada em metros quadrados: "))
+area_pintada = float(input("Área a ser pintada em metros quadrados: "))
 # 1 lata == 18 L == R$450.00 == 108 m²
 
-lataPreco = 450 
-areaPorLitro = 6 # m²
+lata_preco = 450 # R$
+area_por_lata = 108 # m²
+litros_por_lata = 18 # L
 
-totalLatas = areaPintada 
-# voce precisa comprar X latas
+total_latas = math.ceil((((area_pintada * litros_por_lata) / area_por_lata) / litros_por_lata))
 
+preco_total_latas = '%.2f' % (total_latas * lata_preco)
 
-"""
-x == 
-"""
+print("Quantidade de Latas:", total_latas)
+
+print("Preço : R$", )
 
 
 
 print("14. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre um relatório com o valor total do seu salário no referido mês (salário bruto), sabendo-se que são descontados 7.5% para o Imposto de Renda, 8% para o INSS e 1% para o sindicato.")
+
+ganho_por_hora = float(input("Ganho por hora: "))
+horas_por_mes = float(input("Horas por mês: "))
+
+salario_bruto = ganho_por_hora * horas_por_mes
+imposto_de_renda = salario_bruto * (7.5 / 100)
+inss = salario_bruto * (8 / 100)
+sindicato = salario_bruto * (1 / 100)
+
+salario_liquido = salario_bruto - imposto_de_renda - inss - sindicato
+
+print("+ Salário Bruto: R$", '%.2f' % salario_bruto)
+print("- IR (7.5%): R$", '%.2f' % imposto_de_renda)
+print("- INSS (8%): R$", '%.2f' % inss)
+print("- Sindicato (1%): R$", '%.2f' % sindicato)
+print("= Salário Líquido: R$", '%.2f' % salario_liquido)
 
 # Modelo de relatório:
 # + Salário Bruto: R$
@@ -169,4 +186,3 @@ print("14. Faça um Programa que pergunte quanto você ganha por hora e o númer
 # - INSS (8%): R$
 # - Sindicato (1%): R$
 # = Salário Líquido: R$
-
