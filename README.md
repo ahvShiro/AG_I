@@ -8,7 +8,8 @@ Este é o repositório onde farei uploads das minhas anotações para ter acesso
 
 	print("XX. Enunciado do exercício")
 
-	# Resolução do exercício
+	exemplo = "String Exemplo"
+	printf(exemplo)
 
 	# Três line breaks para separar cada exercício 
 
