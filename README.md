@@ -38,8 +38,12 @@ Este é o repositório onde farei uploads das minhas anotações para ter acesso
 - `aula01.py` - Variáveis
 - `aula02.py` - Entrada e saída de dados
 - `aula03.py` - Bibliotecas
-- `aula04.py` - Operadores lógicos e relacionais
+- `aula04.py` - Operadores relacionais e estruturas condicionais simples e compostas
+- `aula05.py` - Estruturas condicionais com múltiplas alternativas e operadores lógicos
+
 
 - `atividade01.py` - print() e variáveis
 - `atividade02.py` - Operadores matemáticos
-- `atividade03.py` - Operadores lógicos
+- `atividade03.py` - Operadores relacionais
+- `atividade04.py` - Operadores lógicos
+
