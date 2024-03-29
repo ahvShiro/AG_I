@@ -223,10 +223,73 @@ if(valor > 100):
     print("Desconto de 10%: R$" '%')
 
 
+
 print("20. Faça um programa que calcule o valor de imposto a ser pago a partir de um salário bruto. Se o salário for um valor até R$1.903,98, a pessoa não precisa pagar imposto de renda. Por outro lado, se o salário for menor que R$2.826,65 é cobrado 7,5% de imposto e se for maior, cobra-se 15%. Faça um programa que receba o salário bruto, calcule e mostre o valor a ser pago.")
+
+salario_bruto = float(input("Salário: "))
+
+if(salario_bruto <= 1903.98):
+    print("Você não precisa pagar imposto de renda")
+else:
+    if(salario_bruto < 2826.65):
+        print("Você precisa pagar R$", salario_bruto * (7.5 / 100))
+    else:
+        print("Você precisa pagar R$", salario_bruto * (15 / 100))
+
+
+
 print("21. Uma loja está com uma promoção em compras acima de R$500. Acima desse valor, a loja oferece 10% de desconto se o cliente pagar por PIX ou 5% de desconto para outras formas de pagamento. Por outro lado, para compras abaixo de R$500, a loja oferece apenas 5% de desconto se o pagamento for por PIX. Faça um programa que receba um valor e a forma de pagamento, calcule e imprima o valor do desconto e o valor final da compra")
+
+valor = float(input("Valor: "))
+
+print("1. PIX")
+print("2. Outro")
+metodo = int(input("Método de pagamento (1 ou 2): "))
+
+if(valor > 500):
+    if(metodo == 1):
+        print("Valor total: R$", valor - (valor * (10 / 100)))
+    else:
+        print("Valor total: R$", valor - (valor * (5 / 100)))
+else:
+    print("Valor total: R$", valor - (valor * (5 / 100)))
+
+
+
 print("22. Faça um Programa receba o valor de x, calcule e imprima o valor de f(x) que será:")
 # f(x) = 1 / (2 - x) se x < 2
 # f(x) = 1 / (x - 2) se x >= 2
+
+x = float(input("x: "))
+
+if(x < 2):
+    print("f(x) =", 1 / (2 - x))
+if(x >= 2):
+    print("f(x) =", 1 / (x - 2))
+
+
+
 print("23. Construa um programa que receba três valores, A, B e C. Em seguida, apresente na tela somente o maior deles")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+
+if(a > b):
+    if(a > c):
+        print("A é o maior")
+    else:
+        print("C é o maior")
+else:
+    if(b > c):
+        print("B é o maior")
+    else: 
+        print("C é o maior")
+
+
+
 print("24. Construa um programa para receber quatro números e no final apresentar o maior e o menor")
+
+n1 = float(input("n1: "))
+n2 = float(input("n2: "))
+n3 = float(input("n3: "))
+n4 = float(input("n4: "))
