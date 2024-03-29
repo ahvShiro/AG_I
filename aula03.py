@@ -1,3 +1,6 @@
+import random
+import math
+
 # === BIBLIOTECAS =========================================
 
 #   Conjunto de código criado para determinado fim
@@ -6,13 +9,14 @@
 
 # === random ==============================================
 
-import random
+# import random
 
 #   A biblioteca random gera números aleatórios
 #   Uso de funções: nome_da_biblioteca.nome_da_funcao()
 #   Cada função tem um parâmetro
 
 d20 = random.randint(1, 20)
+
 # Retorna um int n sendo arg1 <= n <= arg2
 
 
@@ -40,6 +44,19 @@ print("Número aleatório nesse intervalo:", aleatorioIntervalo)
 
 # === math ================================================
 
-import math
+# import math
 
+# Biblioteca que implementa funções que realizam operações matemáticas
+
+# Raiz quadrada
+valor = math.sqrt(16)
+print(valor)
+
+# Potência
+valor = math.pow(2, 8)
+print(valor)
+
+# Arredondar o valor (pra baixo)
+valor = math.floor(7.45)
+print(valor)
 
