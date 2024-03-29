@@ -8,9 +8,9 @@
 
 # Operadores relacionais:
 
-# x > y     Maior que
+# x >  y     Maior que
 # x >= y    Maior ou igual a
-# x < y     Menor que 
+# x <  y     Menor que 
 # x <= y    Menor ou igual a
 # x == y    Igual a
 # x != y    Diferente de
