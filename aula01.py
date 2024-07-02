@@ -39,6 +39,17 @@ print("Hello world!")
 
 # nome_da_variavel = valor
 
+# =======================================================================================
+
+# COMENTÁRIO DO AISLAN: DIFERENÇA DE LINGUAS INTERPRETADAS E COMPILADAS 
+
+# COMPILADAS:
+# Geram um arquivo executável para rodar
+
+# INTERPRETADAS:
+# Não gera, roda linha a linha
+
+# =======================================================================================
 
 # === EXERCÍCIO 1 ===============================
 
