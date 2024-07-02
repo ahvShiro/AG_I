@@ -1,7 +1,7 @@
 name = "Adalberto Pereira"
 birthday = "21/03/2000"
 age = 24
-paycheck = 9999.9999999
+paycheck = 2403.14159265358939323
 acTurnedOn = False
 
 def floatToBrl(float) -> str:
