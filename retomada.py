@@ -9,3 +9,19 @@ def floatToBrl(float) -> str:
 
 print(f"Nome: {name}, Aniversário: {birthday}, Idade: {age}, Salário: {floatToBrl(paycheck)}, O ar tá ligado?: {acTurnedOn}")
 print("\\\"")
+
+
+# Exercício 3: Implemente um algoritmo que solicite um número inteiro ao usuário. 
+# Em seguida, informe na tela uma mensagem dizendo se o número é par ou ímpar.
+
+userInt = int(input("Digite um número inteiro: "))
+def isEven(int):
+    if(int % 2 == 0):
+        return True
+    else:
+        return False
+
+if(isEven(userInt)):
+    print("Número par")
+else:
+    print("Número ímpar")
