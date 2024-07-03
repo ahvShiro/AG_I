@@ -14,8 +14,13 @@ print("\\\"")
 # Exercício 3: Implemente um algoritmo que solicite um número inteiro ao usuário. 
 # Em seguida, informe na tela uma mensagem dizendo se o número é par ou ímpar.
 
-userInt = int(input("Digite um número inteiro: "))
-def isEven(int):
+# User input
+while True:
+    userInt = int(input("Digite um número inteiro: "))
+    if(isinstance(userInt, int)):
+        break
+
+def isEven(int) -> bool:
     if(int % 2 == 0):
         return True
     else:
