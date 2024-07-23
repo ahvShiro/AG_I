@@ -95,32 +95,86 @@ import random
 # - valor do aumento;
 # - novo salário, após o aumento.
 
-def promptPaycheck(paycheck_before, percentual, increase, paycheck_after):
-    print(f"Salário antes do reajuste: {paycheck_before} \nPercentual de aumento aplicado: {percentual} \nValor do aumento: {increase} \nSalário após aumento: {paycheck_after}")
 
-paycheck = float(input("Salário do colaborador: "))
+# paycheck = float(input("Salário do colaborador: "))
 
-if (paycheck >= 710):
-    percentual = 20
-    increase = (paycheck * percentual) / 100
-    paycheck_after = paycheck + increase
-    promptPaycheck(paycheck, percentual, increase, paycheck_after)
+# if (paycheck <= 710):
+#     percentual = 20
 
-elif (paycheck >= 1000):
-    percentual = 15
-    increase = (paycheck * percentual) / 100
-    paycheck_after = paycheck + increase
-    promptPaycheck(paycheck, percentual, increase, paycheck_after)
+# elif (paycheck <= 1000):
+#     percentual = 15
 
-elif (paycheck >= 2500):
-    percentual = 10
-    increase = (paycheck * percentual) / 100
-    paycheck_after = paycheck + increase
-    promptPaycheck(paycheck, percentual, increase, paycheck_after)
-else:
-    percentual = 5
-    increase = (paycheck * percentual) / 100
-    paycheck_after = paycheck + increase
-    promptPaycheck(paycheck, percentual, increase, paycheck_after)
+# elif (paycheck <= 2500):
+#     percentual = 10
+
+# else:
+#     percentual = 5
+
+# paycheck_before = paycheck
+# increase = (paycheck * percentual) / 100
+# paycheck_after = paycheck + increase
+# print(f"Salário antes do reajuste: R${paycheck_before:.2f} \nPercentual de aumento aplicado: {percentual}% \nValor do aumento: R${increase:.2f} \nSalário após aumento: R${paycheck_after:.2f}")
+
+# 4) Crie um algoritmo que receba o valor de x, calcule e imprima o valor de f(x):
+
+
+# x = float(input("x = "))
+# if (x <= 1):
+#     print("f(x) = 1")
+# elif (x <= 2):
+#     print("f(x) = 2")
+# elif (x <= 3):
+#     print(f"f(x) = {x ** 2}")
+# else:
+#     print(f"f(x) = {x ** 3}")
+
+# 5) == Menu de Opções ==
+# 1. Gerar um número aleatório entre X e Y
+# 2. X é par ou ímpar?
+# 3. Valor R$X com Y% de desconto
+# 4. Calcular X e Y com o operador informado (+, -, * ou /)
+# == Opção escolhida:
+
+
+option = int(input("== Menu de Opções ==\n1. Gerar um número aleatório entre X e Y\n2. X é par ou ímpar?\n3. Valor R$X com Y% de desconto\n4. Calcular X e Y com o operador informado (+, -, * ou /)\n== Opção escolhida: "))
+
+match option:
+    case 1:
+        x = int(input("x = "))
+        y = int(input("y = "))
+        print(f"Entre {x} e {y}: {random.randint(x, y)}")
+    case 2:
+        x = int(input("x = "))
+        if (x % 2 == 0):
+            print("Par")
+        else:
+            print("Ímpar")
+    case 3:
+        x = float(input("x = "))
+        y = int(input("y = "))
+        result = (x * y) / 100
+        print(f"R${x:.2f} com {y}% de desconto = {result}")
+    case 4:
+        x = float(input("x = "))
+        y = float(input("y = "))
+        operator = input("operador = ")
+
+        if (operator == "+"):
+            result = x + y
+
+        if (operator == "-"):
+            result = x - y
+
+        if (operator == "/"):
+            result = x / y
+
+        if (operator == "*"):
+            result = x * y
+
+        print(f"{x} {operator} {y} = {result}")
+    case _:
+        print("Opção não existe. Tente novamente")
+
+
 
 

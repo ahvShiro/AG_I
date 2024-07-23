@@ -1,12 +1,6 @@
 import random
 import math
 
-# === BIBLIOTECAS =========================================
-
-#   Conjunto de código criado para determinado fim
-#   Importada no começo do algoritmo
-
-
 # === random ==============================================
 
 # import random
