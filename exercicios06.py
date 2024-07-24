@@ -8,11 +8,3 @@
 #     i += 1
 
 
-tamanho_escada = int(input("Tamanho da escada: "))
-
-for i in range(tamanho_escada):
-    for j in range(i):
-        print("#", end='')
-        j 
-    print("")
-    i += 1
