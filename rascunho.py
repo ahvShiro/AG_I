@@ -40,7 +40,10 @@ while (preco <= valorFinal):
     mes += 1
     preco += preco * juros
 
-print(f"{int(mes / 12)} anos e {mes % 12} meses para R${valorInicial:.2f} virarem R${valorFinal:.2f}")
+anos = int(mes / 12)
+meses = mes % 12
+
+print(f"{anos} anos e {meses} meses para R${valorInicial:.2f} virarem R${valorFinal:.2f}")
 
 
 
