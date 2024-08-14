@@ -24,6 +24,7 @@ for i in range(30):
     if(num % 3 == 0):
         multiplo_de_tres += 1
 
+    # SOMA DE VARIÁVEIS A CADA ITERAÇÃO
     soma_total += num
     iteracoes_validas += 1
 
