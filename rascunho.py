@@ -17,11 +17,11 @@ for i in range(30):
         continue
 
     # CONDIÇÕES PARA SEREM IMPRESSAS
-    if(num%2==0):
+    if(num % 2 == 0):
         par += 1
     else:
         impar += 1
-    if (  num% 3 == 0):
+    if (num % 3 == 0):
         multiplo_de_tres += 1
 
     # SOMA DE VARIÁVEIS A CADA ITERAÇÃO
