@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import random
 
 
@@ -73,13 +72,13 @@ import random
 
 ## 2) Faça um programa que leia 5 números e informe apenas o maior número.
 
-# maior_numero = 0
-# for i in range(1, 5 + 1):
-#     numero_atual = int(input(f"Digite um número ({i}/5): "))
-#     if(numero_atual > maior_numero):
-#         maior_numero = numero_atual
+maior_numero = 0
+for i in range(1, 5 + 1):
+    numero_atual = int(input(f"Digite um número ({i}/5): "))
+    if(numero_atual > maior_numero):
+        maior_numero = numero_atual
 
-# print(f"Maior número: {maior_numero}")
+print(f"Maior número: {maior_numero}")
 
 
 ## 3) Faça um programa que leia 5 números e informe a soma e a média dos números.
