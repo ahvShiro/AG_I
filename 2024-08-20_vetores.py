@@ -1,4 +1,6 @@
-v = [0.0] * 10
+size = int(input("Insira o tamanho do vetor: "))
 
-print(v)
+vector = [0] * size
+
+print(vector)
 
