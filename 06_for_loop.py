@@ -72,13 +72,13 @@ import random
 
 ## 2) Faça um programa que leia 5 números e informe apenas o maior número.
 
-maior_numero = 0
-for i in range(1, 5 + 1):
-    numero_atual = int(input(f"Digite um número ({i}/5): "))
-    if(numero_atual > maior_numero):
-        maior_numero = numero_atual
+# maior_numero = 0
+# for i in range(1, 5 + 1):
+#     numero_atual = int(input(f"Digite um número ({i}/5): "))
+#     if(numero_atual > maior_numero):
+#         maior_numero = numero_atual
 
-print(f"Maior número: {maior_numero}")
+# print(f"Maior número: {maior_numero}")
 
 
 ## 3) Faça um programa que leia 5 números e informe a soma e a média dos números.
@@ -222,10 +222,57 @@ print(f"Maior número: {maior_numero}")
 ## Use um laço “while” para permitir que o usuário continue tentando até acertar. Após cada tentativa, informe se o palpite 
 ## é maior, menor ou igual ao número sorteado.
 
+# numero_computador = random.randint(1, 100)
+
+# while True:
+#     numero_usuario = int(input("Adivinhe o número escolhido: "))
+#     if(numero_usuario == numero_computador):
+#         print("Parabéns, você acertou!")
+#         break
+#     elif(numero_usuario > numero_computador):
+#         print(f"{numero_usuario} é maior que o número escolhido")
+#     elif(numero_usuario < numero_computador):
+#         print(f"{numero_usuario} é menor que o número escolhido")
+
 
 ## 11) Refaça o exercício anterior, porém utilize um laço “for” para limitar o número de tentativas a 10 (usuário tem 10 chances só para acertar).
+
+# numero_computador = random.randint(1, 100)
+
+# for i in range(1, 10+1):
+#     numero_usuario = int(input(f"Adivinhe o número escolhido ({i}/10): "))
+#     if(numero_usuario == numero_computador):
+#         print("Parabéns, você acertou!")
+#         break
+#     elif(numero_usuario > numero_computador):
+#         print(f"{numero_usuario} é maior que o número escolhido")
+#     elif(numero_usuario < numero_computador):
+#         print(f"{numero_usuario} é menor que o número escolhido")
+
+
 ## 12) Crie um programa que leia uma quantidade indeterminada de números positivos e conte quantos deles estão nos seguintes intervalos: 
 ## [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo. No final, apresente quantos números há em cada intervalo.
+
+
+# zero_a_vinte_e_cinco = 0
+# vinte_e_seis_a_cinquenta = 0
+# cinquenta_e_um_a_setenta_e_cinco = 0
+# setenta_e_seis_a_cem = 0
+
+# while True:
+#     user_input = int(input("Digite um número positivo: "))
+#     if(user_input < 0):
+#         print(f"[0-25]: {zero_a_vinte_e_cinco}, [26-50]: {vinte_e_seis_a_cinquenta}, [51-75]: {cinquenta_e_um_a_setenta_e_cinco}, [76-100]: {setenta_e_seis_a_cem}")
+#         break
+#     if(user_input < 25):
+#         zero_a_vinte_e_cinco += 1
+#     elif(user_input < 50):
+#         vinte_e_seis_a_cinquenta += 1
+#     elif(user_input < 75):
+#         cinquenta_e_um_a_setenta_e_cinco += 1
+#     elif(user_input < 100): 
+#         setenta_e_seis_a_cem += 1
+
 
 ## 13) Desenvolva um programa que calcule o custo total de uma viagem com base na distância a ser percorrida e o tipo de veículo. O custo por 
 ## quilômetro varia conforme o tipo de veículo, conforme a tabela abaixo:
@@ -240,6 +287,4 @@ print(f"Maior número: {maior_numero}")
 
 ## 14) O programa deve solicitar a distância a ser percorrida e o tipo de veículo. Em seguida, deve calcular e exibir o custo total da viagem. 
 ## O programa deve permitir que o usuário faça novos cálculos até que ele escolha encerrar.
-
-
 
