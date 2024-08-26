@@ -285,6 +285,30 @@ import random
 ## Luxo
 ## R$ 3,00
 
-## 14) O programa deve solicitar a distância a ser percorrida e o tipo de veículo. Em seguida, deve calcular e exibir o custo total da viagem. 
+## O programa deve solicitar a distância a ser percorrida e o tipo de veículo. Em seguida, deve calcular e exibir o custo total da viagem. 
 ## O programa deve permitir que o usuário faça novos cálculos até que ele escolha encerrar.
 
+
+# while True:
+#     print("== Calculadora de custo de viagem ==")
+
+#     distance = float(input("Digite a distância a ser percorrida: "))
+
+#     print(f"== Tipos de veículos ==\n1. Econômico\n2. Médio\n3. Luxo")
+#     vehicle_type = int(input("Digite o número correspondente ao seu veículo: "))
+
+#     if(vehicle_type == 1):
+#         print(f"Custo: R${distance * 1.50:.2f}")
+#     elif(vehicle_type == 2):
+#         print(f"Custo: R${distance * 2.25:.2f}")
+#     elif(vehicle_type == 3):
+#         print(f"Custo: R${distance * 3.00:.2f}")
+#     else:
+#         print("Valor não reconhecido, tente novamente")
+#         continue
+
+#     new_calc = input("Deseja calcular o preço de outra viagem? (s/n): ")
+
+#     if(new_calc != 's'):
+#         print("Encerrando o programa...")
+#         break
