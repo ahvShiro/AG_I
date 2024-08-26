@@ -49,3 +49,4 @@ print(parcial)
 # Apresente na tela os números de X a Y (peça para o usuário informar os valores de X e de Y).
 # Faça a soma dos números de X a Y e apresente somente o resultado (peça para o usuário informar os valores de X e de Y).
 # Apresente na tela somente os números ímpares entre X e Y (peça para o usuário informar os valores de X e de Y).
+        
