@@ -136,45 +136,160 @@ import random
 # == Opção escolhida:
 
 
-option = int(input("== Menu de Opções ==\n1. Gerar um número aleatório entre X e Y\n2. X é par ou ímpar?\n3. Valor R$X com Y% de desconto\n4. Calcular X e Y com o operador informado (+, -, * ou /)\n== Opção escolhida: "))
+# option = int(input("== Menu de Opções ==\n1. Gerar um número aleatório entre X e Y\n2. X é par ou ímpar?\n3. Valor R$X com Y% de desconto\n4. Calcular X e Y com o operador informado (+, -, * ou /)\n== Opção escolhida: "))
 
-match option:
-    case 1:
-        x = int(input("x = "))
-        y = int(input("y = "))
-        print(f"Entre {x} e {y}: {random.randint(x, y)}")
-    case 2:
-        x = int(input("x = "))
-        if (x % 2 == 0):
-            print("Par")
-        else:
-            print("Ímpar")
-    case 3:
-        x = float(input("x = "))
-        y = int(input("y = "))
-        result = (x * y) / 100
-        print(f"R${x:.2f} com {y}% de desconto = {result}")
-    case 4:
-        x = float(input("x = "))
-        y = float(input("y = "))
-        operator = input("operador = ")
+# match option:
+#     case 1:
+#         x = int(input("x = "))
+#         y = int(input("y = "))
+#         print(f"Entre {x} e {y}: {random.randint(x, y)}")
+#     case 2:
+#         x = int(input("x = "))
+#         if (x % 2 == 0):
+#             print("Par")
+#         else:
+#             print("Ímpar")
+#     case 3:
+#         x = float(input("x = "))
+#         y = int(input("y = "))
+#         result = (x * y) / 100
+#         print(f"R${x:.2f} com {y}% de desconto = {result}")
+#     case 4:
+#         x = float(input("x = "))
+#         y = float(input("y = "))
+#         operator = input("operador = ")
 
-        if (operator == "+"):
-            result = x + y
+#         if (operator == "+"):
+#             result = x + y
 
-        if (operator == "-"):
-            result = x - y
+#         if (operator == "-"):
+#             result = x - y
 
-        if (operator == "/"):
-            result = x / y
+#         if (operator == "/"):
+#             result = x / y
 
-        if (operator == "*"):
-            result = x * y
+#         if (operator == "*"):
+#             result = x * y
 
-        print(f"{x} {operator} {y} = {result}")
-    case _:
-        print("Opção não existe. Tente novamente")
-
-
+#         print(f"{x} {operator} {y} = {result}")
+#     case _:
+#         print("Opção não existe. Tente novamente")
 
 
+
+
+# 6) Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+
+
+# O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder 
+# positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino".
+# Caso contrário, ele será classificado como "Inocente".
+
+# print("Responda \"1\" para sim e \"0\" para não")
+
+# a = int(input("Telefonou para a vítima? "))
+# b = int(input("Esteve no local do crime? "))
+# c = int(input("Mora perto da vítima? "))
+# d = int(input("Devia para a vítima? "))
+# e = int(input("Já trabalhou com a vítima? "))
+
+# total = a + b + c + d + e
+
+# if(total == 0):
+#     print("Inocente")
+# elif(total <= 2):
+#     print("Suspeita")
+# elif(total <= 4):
+#     print("Cúmplice")
+# elif(total == 5):
+#     print("Assasino")
+
+
+# 7) As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver 
+# o programa que calcula os reajustes. Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte 
+# critério, baseado no salário atual:
+
+# salários até R$ 2.800,00 (incluindo) : aumento de 20%
+# salários entre R$ 2.800,00 e R$ 7.000,00 : aumento de 15%
+# salários entre R$ 7.000,00 e R$ 15.000,00 : aumento de 10%
+# salários de R$ 15.000,00 em diante : aumento de 5%
+
+# Após o aumento ser realizado, informe na tela:
+
+# o salário antes do reajuste;
+# o percentual de aumento aplicado;
+# o valor do aumento;
+# o novo salário, após o aumento.
+
+
+salario = float(input("Salário: "))
+percentual = 0
+
+if(salario <= 2800):
+    percentual = 20
+elif(salario <= 7000):
+    percentual = 15
+elif(salario <= 15000):
+    percentual = 10
+else:
+    percentual = 5
+
+aumento = salario * (percentual / 100)
+salario_depois = aumento + salario
+
+print(f"Salário antes: {salario}")
+print(f"Percentual aplicado: {percentual}%")
+print(f"Valor do aumento: {aumento}")
+print(f"Salário depois: {salario_depois}")
+
+
+
+# 8) Crie um algoritmo que leia o número do mês (1 a 12) e emita na tela uma mensagem informando o nome do mês e a quantidade
+# de dias que ele possui.
+
+
+
+
+
+# 9) Crie um programa que simula o funcionamento de uma calculadora, ou seja, emita o resultado da operação entre dois operandos
+# a partir da leitura dos mesmos e do operador. Considere que os possíveis operadores são: (+) adição, (-) subtração, 
+# (x) multiplicação e (/) divisão.
+
+
+
+
+
+
+# 10) Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+# Álcool:
+# até 20 litros, desconto de 3% por litro
+# acima de 20 litros, desconto de 5% por litro
+# Gasolina:
+# até 20 litros, desconto de 4% por litro
+# acima de 20 litros, desconto de 6% por litro 
+# Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), 
+# calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 5,49 o preço do litro do álcool é R$ 3,59.
+
+
+# 11) Uma frutaria está vendendo frutas com a seguinte tabela de preços:
+
+# Até 5 Kg
+# Acima de 5 Kg
+# Morango
+# R$ 18,90 por Kg
+# R$ 17,50 por Kg
+# Maçã
+# R$ 9,50 por Kg
+# R$ 7,90 por Kg
+
+# Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$50,00, receberá ainda um desconto de 5% sobre este 
+# total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos, a quantidade (em Kg) de maçãs adquiridas e calcule o valor a ser
+# pago pelo cliente.
+
+
+# 12) Faça um programa para calcular a quantidade de notas de um troco. O programa deverá perguntar ao usuário o valor do troco (inteiro) 
+# e depois informar quantas notas (considere R$1 como nota, pois temos moeda) de cada valor serão fornecidas. As notas disponíveis 
+# serão as de 1, 2, 5, 10, 20, 50 e 100 reais.
+# Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+# Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, duas notas de 20, uma nota de 5 e duas de 2.
+# Dica: utilize funções da biblioteca math (teto e chão, por exemplo), o resto da divisão ou a parte inteira da divisão para realizar os cálculos. NÃO utilize laço de repetição.
