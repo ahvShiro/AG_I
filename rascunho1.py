@@ -1,4 +1,5 @@
-# import random
+import random
+import time
 
 # even_nums = 0
 # odd_nums = 0
@@ -27,14 +28,44 @@
 
 
 
-x = [0] * 5
+# x = [0] * 5
 
-print(len(x))
+# print(len(x))
 
-nome = input("string: ")
+# nome = input("string: ")
 
-print(len(nome))
+# print(len(nome))
 
-print(x[0])
-print(nome[len(nome) - 1])
+# print(x[0])
+# print(nome[len(nome) - 1])
 
+
+tamanho_vetor = int(input("Digite a quantidade de alunos na sala: "))
+
+chamada = [" "] * tamanho_vetor
+for i in range(0, len(chamada)):
+    chamada[i] = input("Seu nome: ")
+
+print("== Alunos ==")
+
+for nome in chamada:
+    print(nome)
+
+random.shuffle(chamada)
+
+print("============")
+
+
+qt_premios = int(input("Quantos prêmios serão sorteados? "))
+
+
+for i in range(1, qt_premios + 1):
+    input(f"O {i}º sorteio será realizado. Pressione enter para prosseguir... ")
+
+    for i in range(5, 0, -1):
+        print(f"{i}...")
+        time.sleep(1)
+
+    aluno_sorteado = random.randint(0, len(chamada) - 1)
+
+    print(f"Parabéns {chamada[aluno_sorteado]}, você ganhou um prêmio surpresa!")
