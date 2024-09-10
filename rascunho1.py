@@ -88,9 +88,9 @@ for i in range(0, quantidade_times):
     times[i] = input("Nome: ")
     pontuacoes[i] = int(input("Pontuação: "))
 
-    if(times[i] > primeiro_maior_pontuacao):
+    if(pontuacoes[i] > primeiro_maior_pontuacao):
         primeiro_maior_indice = i
-    elif(times[i] < primeiro_maior_pontuacao and times[i] > segundo_maior_pontuacao):
+    elif(pontuacoes[i] < primeiro_maior_pontuacao and times[i] > segundo_maior_pontuacao):
         segundo_maior_indice = i
 
 
