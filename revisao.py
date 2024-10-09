@@ -41,12 +41,12 @@
 # valor = int(input("Valor a ser buscado: "))
 # foiEncontrado = False
 
-# for i in range(0, len(vetor)):
-#     if(valor == vetor[i]):
-#         foiEncontrado = True
-#         break
-#     elif(valor < vetor[i]):
-#         break
+for i in range(0, len(vetor)):
+    if(valor == vetor[i]):
+        foiEncontrado = True
+        break
+    elif(valor < vetor[i]):
+        break
 
 # if(foiEncontrado):
 #     print(f"Valor {valor} encontrado")
