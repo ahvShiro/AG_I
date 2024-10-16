@@ -1,5 +1,3 @@
-import time
-
 # # Funções Built-In
 # print(f"print()")
 
@@ -14,11 +12,23 @@ import time
 # x = math.sqrt(x)
 
 
+
 # Funções de Usuários
-def helloWorld():
-    print("Função invocada 😈")
-    time.sleep(5)
+
+def hello_world():
     print("Hello, world! :)")
     print("Uma função é usada para reutilizar trechos de código")
+    print("Vantagens: Reuso, Manutenção")
 
-helloWorld()
+
+
+def obter_diretorio_atual():
+    diretorio = __file__
+    return diretorio
+
+
+
+def cumprimentar(nome):
+    print(f"Olá, {nome}!")
+    print("Tudo bom?")
+
