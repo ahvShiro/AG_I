@@ -42,12 +42,52 @@ print("Tabuada:")
 calcularTabuada(x)
 
 
+# %%
 
-# Crie procedimentos com parâmetros:
+# 2. Crie procedimentos com parâmetros:
 # Crie um procedimento que recebe um vetor de números inteiros por parâmetro. Esta função deve chamar imprimirVetor() e vai imprimir na tela todos os números do vetor informado. 
-# Faça um procedimento chamado encontrarMaior() que recebe um vetor de números inteiros como parâmetro, procure e informe somente o maior valor do vetor.
-# Faça um procedimento chamada encontrarMenor() que recebe um vetor de números inteiros como parâmetro, procure e informe somente o menor valor do vetor.
 
-# Crie no programa principal um vetor e preencha com números. Em seguida, utilize as três funções criadas no exercício anterior.
+def imprimirVetor(vetor):
+    print("[", end='')
+    for i in range(0, len(vetor)):
+
+        if(i < (len(vetor) - 1)):
+            print(f"{vetor[i]}", end=', ')
+
+        elif(i == (len(vetor) - 1)):
+            print(f"{vetor[i]}]")
 
 
+# %% Faça um procedimento chamado encontrarMaior() que recebe um vetor de números inteiros como parâmetro, procure e informe somente o maior valor do vetor.
+
+def encontrarMaior(vetor):
+
+    maior = vetor[0]
+    for i in range(1, len(vetor)):
+        if(vetor[i] > maior):
+            maior = vetor[i]
+
+    print(maior)
+
+# %% Faça um procedimento chamada encontrarMenor() que recebe um vetor de números inteiros como parâmetro, procure e informe somente o menor valor do vetor.
+
+def encontrarMenor(vetor):
+    
+    menor = vetor[0]
+    for i in range(1, len(vetor)):
+        if(vetor[i] < menor):
+            menor = vetor[i]
+    print(menor)
+
+# %% Crie no programa principal um vetor e preencha com números. Em seguida, utilize as três funções criadas no exercício anterior.
+
+vetor = [5, 4, 10, 2, 3]
+
+print("Vetor:")
+imprimirVetor(vetor)
+
+print("Maior:")
+encontrarMaior(vetor)
+
+print("Menor:")
+encontrarMenor(vetor)
