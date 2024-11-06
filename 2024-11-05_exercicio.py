@@ -1,5 +1,16 @@
 import random as r
 
+def imprimirVetor(vetor: list) -> list:
+    print("[", end='')
+    for i in range(0, len(vetor)):
+
+        if(i < (len(vetor) - 1)):
+            print(f"{vetor[i]}", end=', ')
+
+        elif(i == (len(vetor) - 1)):
+            print(f"{vetor[i]}]")
+
+
 def gerarVetor(tam_vetor: int, tipo_dado: str) -> list:
 
     tipo_dado.lower()
@@ -28,16 +39,22 @@ def ordenaBolha(vetor: list) -> list:
                 x = vetor[j]
                 vetor[j] = vetor[j + 1]
                 vetor[j + 1] = x
-    return(vetor)
+
+
+
+
+def main():
+    vetor = gerarVetor(5, "int")
+
+    imprimirVetor(vetor)
+
+    ordenaBolha(vetor)
+
+    imprimirVetor(vetor)
 
 
 
 
 
-
-
-vetor = [4, 5, 3, 1, 2]
-
-print(gerarVetor(5, "int"))
-print(ordenaBolha(vetor))
-
+if(__name__ == "__main__"):
+    main()
