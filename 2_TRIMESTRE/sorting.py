@@ -18,7 +18,7 @@ vetor = [5, 4, 3, 2, 1]
 for i in range(0, len(vetor) - 1):
     menor = i
     for j in range(menor + 1, len(vetor)):
-        if(vetor[j] < vetor[menor]):
+        if(vetor[menor] > vetor[j]):
             x = vetor[menor]
             vetor[menor] = vetor[j]
             vetor[j] = x
@@ -26,19 +26,19 @@ for i in range(0, len(vetor) - 1):
 print(vetor)
 
 
-# %% Insertion Sort
+# %% Insertion Sort >-<
 vetor = [5, 4, 3, 2, 1]
 
 for i in range(1, len(vetor)):
 
-    anterior = i - 1
-    atual = vetor[i]
+    indx_anterior = i - 1
+    val_atual = vetor[i]
 
-    while(anterior >= 0 and atual < vetor[anterior]):
-        vetor[anterior + 1] = vetor[anterior]
-        anterior -= 1
+    while(indx_anterior >= 0 and val_atual < vetor[indx_anterior]):
+        vetor[indx_anterior + 1] = vetor[indx_anterior]
+        indx_anterior -= 1
 
-    vetor[anterior + 1] = atual
+    vetor[indx_anterior + 1] = val_atual
 
 print(vetor)
 

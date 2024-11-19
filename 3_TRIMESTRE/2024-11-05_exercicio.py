@@ -2,8 +2,8 @@ import random as r
 
 def imprimirVetor(vetor: list) -> list:
     print("[", end='')
-    for i in range(0, len(vetor)):
 
+    for i in range(0, len(vetor)):
         if(i < (len(vetor) - 1)):
             print(f"{vetor[i]}", end=', ')
 

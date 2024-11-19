@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void bubbleSort(int vetor[], int tamanho) {    
+void insertionSort(int vetor[], int tamanho) {    
     for(int i = 0; i < tamanho - 1; i++) {
-        for(int j = 0; j < tamanho - 1 - i; j++) {
-            if(vetor[j] > vetor[j + 1]) {
+        for(int j = 0; j < 1; j++) {
+            if(vetor[j] > vetor[i]) {
                 int x = vetor[j];
                 vetor[j] = vetor[j + 1];
                 vetor[j + 1] = x;
@@ -11,6 +11,7 @@ void bubbleSort(int vetor[], int tamanho) {
         }
     }
 }
+
 
 void printVetor(int vetor[], int tamanho) {
     printf("[");
