@@ -1,7 +1,7 @@
 
 # 1 - Criar uma função que recebe por parâmetro um dicionário com os dados de uma nova venda e escreve no final do arquivo.
 def insert_venda(venda: dict) -> int:
-    arquivo = open('loja.csv', 'a')
+    arquivo = open('loja/loja.csv', 'a')
     
     fstring = f"{venda['nome']},{venda['data']},{venda['quantidade']},{venda['valor']}\n"
     
@@ -11,21 +11,30 @@ def insert_venda(venda: dict) -> int:
     print(fstring)
     return 0
 
-# 2 - Criar uma função que recebe por parâmetro o nome de um cliente e retorna um vetor de dicionários de vendas do cliente (pesquisar pelo nome ou parte dele).
+# 2 - Criar uma função que recebe por parâmetro o nome de um cliente e retorna 
+# um vetor de dicionários de vendas do cliente (pesquisar pelo nome ou parte dele).
+
 def select_cliente(nome: str) -> list:
-    arquivo = open('loja.csv', 'a')
-    conteudo = arquivo.readlines()
-    for i in range(0, len(conteudo)):
+    f = open("loja/loja.csv")
+    content = f.readlines()[1:]
+    vendas = []
+
+    for i in range(0, len(content)):
         # [nome, data, quantidade, valor]
-        linha = conteudo[i].split(",").replace("\n", "")
+        linha = content[i].strip().split(",")
 
-        # criar vetor para armazenar dicts
-        # if(nome in linha[0]):
-            # adiciona o dict em um vetor
+        if(nome in linha[0]):
+            vendas.append({
+                "nome": linha[0],
+                "data": linha[1],
+                "quantidade": linha[2],
+                "valor": linha[3]
+            })
 
-        #retornar vetor
-        
-    arquivo.close()
+    f.close()
+    return vendas
+
+
 
 
 # 3 - Criar uma função que recebe por parâmetro o nome de um cliente e retorna um dicionário com a quantidade de itens vendidos e o valor total de vendas do cliente (pesquisar pelo nome ou parte dele).
